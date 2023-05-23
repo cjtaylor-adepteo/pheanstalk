@@ -379,7 +379,7 @@ class Pheanstalk implements PheanstalkInterface
      * Creates a new connection object, based on the existing connection object,
      * and re-establishes the used tube and watchlist.
      */
-    private function reconnect()
+    public function reconnect()
     {
         $this->connection->disconnect();
 
